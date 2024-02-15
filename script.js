@@ -33,6 +33,38 @@ function yes() {
     image.style.height = "294px";
     document.body.appendChild(image);
 
+    let emma1 = document.createElement("img");
+    emma1.src = "emma1.png";
+    emma1.style.width = "336px";
+    emma1.style.height = "252px"
+
+    let emma2 = document.createElement("img");
+    emma2.src = "emma2.png";
+    emma2.style.width = "193px";
+    emma2.style.height = "258px"
+
+    let emma3 = document.createElement("img");
+    emma3.src = "emma3.png";
+    emma3.style.width = "181px";
+    emma3.style.height = "241px";
+
+    let emma4 = document.createElement("img");
+    emma4.src = "emma4.png";
+    emma4.style.width = "189px";
+    emma4.style.height = "252px";
+
+    let emmaContainer = document.createElement("div");
+    emmaContainer.id = "emmaContainer";
+    emmaContainer.style.textAlign = "center";
+    emmaContainer.style.display = "flex";
+    emmaContainer.style.gap = "20px";
+    emmaContainer.appendChild(emma1);
+    emmaContainer.appendChild(emma2);
+    emmaContainer.appendChild(emma3);
+    emmaContainer.appendChild(emma4);
+    emmaContainer.style.justifyContent = "center";
+    emmaContainer.style.alignItems = "center"
+    
     let container = document.createElement("div");
     container.id = "container";
     container.style.textAlign = "center";
@@ -46,6 +78,7 @@ function yes() {
 
     container.appendChild(image);
     container.appendChild(text);
+    container.appendChild(emmaContainer);
     
     document.body.appendChild(container);
 
