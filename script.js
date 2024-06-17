@@ -27,43 +27,52 @@ function yes() {
         divs[i].style.display = "none"; // hide each one
     }
 
+    // Feel free to change the gif, or get rid of it entirely
     let image = document.createElement("img");
     image.src = "tole-cat.gif"
     image.style.width = "165px";
     image.style.height = "294px";
     document.body.appendChild(image);
 
-    let emma1 = document.createElement("img");
-    emma1.src = "emma1.png";
-    emma1.style.width = "336px";
-    emma1.style.height = "252px"
+    /*
+    UNCOMMENT the following to add images.
+    The template is correct, just change the image names (such as image1.png) to the destinations of the desired images
+    Do not forget to change the rest of the code (an easy way to do this is with CTRL/COMMAND + F)
+    Resize appropriately
+    */
+    /*
+    let image1 = document.createElement("img");
+    image1.src = "image1.png";
+    image1.style.width = "336px";
+    image1.style.height = "252px"
 
-    let emma2 = document.createElement("img");
-    emma2.src = "emma2.png";
-    emma2.style.width = "193px";
-    emma2.style.height = "258px"
+    let image2 = document.createElement("img");
+    image2.src = "image2.png";
+    image2.style.width = "193px";
+    image2.style.height = "258px"
 
-    let emma3 = document.createElement("img");
-    emma3.src = "emma3.png";
-    emma3.style.width = "181px";
-    emma3.style.height = "241px";
+    let image3 = document.createElement("img");
+    image3.src = "image3.png";
+    image3.style.width = "181px";
+    image3.style.height = "241px";
 
-    let emma4 = document.createElement("img");
-    emma4.src = "emma4.png";
-    emma4.style.width = "189px";
-    emma4.style.height = "252px";
+    let image4 = document.createElement("img");
+    image4.src = "image4.png";
+    image4.style.width = "189px";
+    image4.style.height = "252px";
 
-    let emmaContainer = document.createElement("div");
-    emmaContainer.id = "emmaContainer";
-    emmaContainer.style.textAlign = "center";
-    emmaContainer.style.display = "flex";
-    emmaContainer.style.gap = "20px";
-    emmaContainer.appendChild(emma1);
-    emmaContainer.appendChild(emma2);
-    emmaContainer.appendChild(emma3);
-    emmaContainer.appendChild(emma4);
-    emmaContainer.style.justifyContent = "center";
-    emmaContainer.style.alignItems = "center"
+    let imageContainer = document.createElement("div");
+    imageContainer.id = "imageContainer";
+    imageContainer.style.textAlign = "center";
+    imageContainer.style.display = "flex";
+    imageContainer.style.gap = "20px";
+    imageContainer.appendChild(image1);
+    imageContainer.appendChild(image2);
+    imageContainer.appendChild(image3);
+    imageContainer.appendChild(image4);
+    imageContainer.style.justifyContent = "center";
+    imageContainer.style.alignItems = "center"
+    */
     
     let container = document.createElement("div");
     container.id = "container";
@@ -78,13 +87,17 @@ function yes() {
 
     container.appendChild(image);
     container.appendChild(text);
-    container.appendChild(emmaContainer);
+    // UNCOMMENT THE FOLLOWING AFTER YOU FINISHED THE IMAGE CONTAINER (if desired)
+    // container.appendChild(imageContainer); 
     
     document.body.appendChild(container);
 
-    let audio = new Audio("putongdao.mp3");
+    // UNCOMMENT this for music playback when the 'Yes' button is pressed. Ideally, it should be long (or you can add a line to loop the music, Google it)
+    /*
+    let audio = new Audio("valentines.mp3");
     audio.play()
     audio.volume = 1;
+    */
 
     /* let cursorImage = "heart-anatomy.png";
     document.body.style.cursor = "url(" + cursorImage + "), auto";
